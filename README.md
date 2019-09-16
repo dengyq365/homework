@@ -84,9 +84,9 @@ cout << anEmployee->salary << endl;
 ```c++
 // <memory> && namespace std
 
-// unique_ptr是普通的指针，当超过作用于
+// unique_ptr是普通的指针，当超过作用域时会自动回收内存。
 std::unique_ptr
-
+// share_ptr是共享的指针。
 std::share_ptr
 ```
 
@@ -95,3 +95,20 @@ std::share_ptr
 - 一个程度或算法的时间效率，也称时间复杂度，有时简称"复杂度"。
 - 复杂度 用大写的字母O和小写的字母n表示，比如O(n),O(n**2)等。n代表问题的规模。
 
+
+
+### reference
+
+引用：相当于变量的别名
+- 定义引用时一定要将其初始化成引用某个变量
+- 初始化后，他就一直引用该变量，不会再引用别的变量
+- 引用只能引用变量，不能引用常量或表达式
+
+类型名 & 引用名 = 变量名;
+int & r = n;
+
+常引用： 定义引用时，前面加const关键字。不能通过常引用去修改其引用的内容
+
+const T 类型和const T & 类型不能初始化T &类型的引用，除非进行强制类型转换(int )
+int n;
+const int & r = n;
