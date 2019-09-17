@@ -54,9 +54,14 @@ using namespace std;
 
 //  homework 1.6
 
+// int main(){
+//     float a;
+//     double b;
+//     printf("%d %d",sizeof(a),sizeof(b));
+//     return 0;
+// }
+
 int main(){
-    float a;
-    double b;
-    printf("%d %d",sizeof(a),sizeof(b));
-    return 0;
+    int n = 4;
+    // int & r = n * 6; 不能赋值给表达式
 }
